@@ -1,0 +1,59 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+
+$red   : desaturate(#fb565e, 20);
+$green : desaturate(#3da06f, 15);
+$white : #eff0f5;
+
+$blue       : #112133;
+$light-blue : #4d6886;
+$dark-blue  : #47546e;
+$graph_main : #cddae8;
+$graph_bg   : #2f4660;
+
+@import "components/responsive";
+@import "components/typography";
+@import "components/buttons";
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin section($padding: 50px) {
+    padding: $padding 0 $padding 0;
+
+    @include large_up { min-height: 700px; }
+}
+
+
+@mixin bodytext {
+    line-height: 1.5em;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+}
+
+@mixin title {
+    font-size: 77px;
+    @include font_abel;
+}
+@mixin subtitle {
+    font-size: 29px;
+    @include font_cabin;
+}
+
+@import "sections/formulario";
+@import "sections/header";
+@import "sections/main_unit";
+@import "sections/statistics";
+@import "sections/who";
+@import "sections/contato";
+@import "sections/newsletter";
+@import "sections/footer";
