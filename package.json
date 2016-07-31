@@ -1,0 +1,34 @@
+{
+  "name": "angular-seed",
+  "version": "1.0.0",
+  "description": "Simple angular seed to start new apps",
+  "main": "app/index.html",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrecastelo/angularseed.git"
+  },
+  "keywords": [
+    "angular",
+    "frontend"
+  ],
+  "author": "Andre Castelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrecastelo/angularseed/issues"
+  },
+  "homepage": "https://github.com/andrecastelo/angularseed#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2"
+  }
+}
